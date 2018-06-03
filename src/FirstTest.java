@@ -5,12 +5,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class FirstTest {
 
@@ -26,7 +30,7 @@ public class FirstTest {
     capabilities.setCapability("automationName", "Appium");
     capabilities.setCapability("appPackage", "org.wikipedia");
     capabilities.setCapability("appActivity", ".main.MainActivity");
-    capabilities.setCapability("app", "/Users/vasilkova/Documents/GitHub/JavaAppiumPractise/JavaAppiumAutomation/apks/org.wikipedia.apk");
+    capabilities.setCapability("app", "/Users/vasilkova/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
     driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
@@ -110,14 +114,14 @@ public class FirstTest {
 
     waitForElementPresentAndClick(
             By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-            "Cannot find Search element",
+            "Cannot find Search Wikipedia element",
             5
     );
 
     waitForElementPresentAndSendKeys(
             By.xpath("//*[contains(@text,'Search…')]"),
             "Java",
-            "Cannot find Search element",
+            "Cannot find Search... element",
             5
     );
 
@@ -139,6 +143,51 @@ public class FirstTest {
             "Expected message does not match actual",
             "Java (programming language)",
             article_title
+    );
+  }
+
+  @Test
+  public void searchForArticlesAndCancelTest() {
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+            "Cannot find Search Wikipedia element",
+            5
+    );
+
+    waitForElementPresentAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            "Java",
+            "Cannot find Search... element",
+            5
+    );
+
+    waitForElementPresent(
+            By.id("org.wikipedia:id/page_list_item_container"),
+            "Cannot find articles",
+            15
+    );
+
+    int numberOfArticles = findElementsAndReturnNumber(
+            By.id("org.wikipedia:id/page_list_item_container")
+    );
+
+    Assert.assertEquals(
+            true,
+            numberOfArticles > 1
+    );
+
+    waitForElementAndClear(
+            By.id("org.wikipedia:id/search_src_text"),
+            "Cannot find field to clear",
+            5
+
+    );
+
+    waitForElementNotPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'"),
+            "The result is still presented",
+            5
     );
 
   }
@@ -180,4 +229,9 @@ public class FirstTest {
 
   }
 
+  private int findElementsAndReturnNumber(By by) {
+     List elements = driver.findElements(by);
+     int elements_number = elements.size();
+     return elements_number;
+  }
 }
