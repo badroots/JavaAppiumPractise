@@ -120,19 +120,19 @@ public class FirstTest {
             5
     );
 
-//    WebElement title_element = waitForElementPresent(
-//            By.id("org.wikipedia:id/view_page_title_text"),
-//            "Cannot find Java article header",
-//            15
-//    );
+    WebElement title_element = waitForElementPresent(
+            By.id("org.wikipedia:id/view_page_title_text"),
+            "Cannot find Java article header",
+            15
+    );
 
-//    String article_title = title_element.getAttribute("text");
+    String article_title = title_element.getAttribute("text");
 
-//    Assert.assertEquals(
-//            "Expected message does not match actual",
-//            "Java (programming language)",
-//            article_title
-//    );
+    Assert.assertEquals(
+            "Expected message does not match actual",
+            "Java (programming language)",
+            article_title
+    );
 
   }
 
