@@ -65,11 +65,11 @@ public class FirstTest {
   public void cancelSearchTest() {
 
 
-    waitForElementPresent(
-            By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-            "Cannot find Search element",
-            5
-    );
+//    waitForElementPresent(
+//            By.xpath("//*[contains(@text,'Search…')]"),
+//            "Cannot find Search element",
+//            5
+//    );
 
     waitForElementPresentAndClick(
             By.xpath("//*[contains(@text,'Search Wikipedia')]"),
@@ -143,16 +143,16 @@ public class FirstTest {
 
   }
 
-  private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {
-    WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
-    wait.withMessage(error_message + "\n");
-    return wait.until(
-            ExpectedConditions.presenceOfElementLocated(by));
-  }
-
-  private WebElement waitForElementPresent(By by, String error_message) {
-    return waitForElementPresent(by, error_message, 5);
-  }
+//  private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {
+//    WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+//    wait.withMessage(error_message + "\n");
+//    return wait.until(
+//            ExpectedConditions.presenceOfElementLocated(by));
+//  }
+//
+//  private WebElement waitForElementPresent(By by, String error_message) {
+//    return waitForElementPresent(by, error_message, 5);
+//  }
 
   private WebElement waitForElementPresentAndClick(By by, String error_message, long timeInSeconds) {
     WebElement element = waitForElementPresent(by, error_message, timeInSeconds);
