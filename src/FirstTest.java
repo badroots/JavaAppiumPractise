@@ -120,32 +120,32 @@ public class FirstTest {
             5
     );
 
-    WebElement title_element = waitForElementPresent(
-            By.id("org.wikipedia:id/view_page_title_text"),
-            "Cannot find Java article header",
-            15
-    );
+//    WebElement title_element = waitForElementPresent(
+//            By.id("org.wikipedia:id/view_page_title_text"),
+//            "Cannot find Java article header",
+//            15
+//    );
 
-    String article_title = title_element.getAttribute("text");
+//    String article_title = title_element.getAttribute("text");
 
-    Assert.assertEquals(
-            "Expected message does not match actual",
-            "Java (programming language)",
-            article_title
-    );
+//    Assert.assertEquals(
+//            "Expected message does not match actual",
+//            "Java (programming language)",
+//            article_title
+//    );
 
   }
 
-  private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {
-    WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
-    wait.withMessage(error_message + "\n");
-    return wait.until(
-            ExpectedConditions.presenceOfElementLocated(by));
-  }
-
-  private WebElement waitForElementPresent(By by, String error_message) {
-    return waitForElementPresent(by, error_message, 5);
-  }
+//  private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {
+//    WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+//    wait.withMessage(error_message + "\n");
+//    return wait.until(
+//            ExpectedConditions.presenceOfElementLocated(by));
+//  }
+//
+//  private WebElement waitForElementPresent(By by, String error_message) {
+//    return waitForElementPresent(by, error_message, 5);
+//  }
 
   private WebElement waitForElementPresentAndClick(By by, String error_message, long timeInSeconds) {
     WebElement element = waitForElementPresent(by, error_message, timeInSeconds);
@@ -170,5 +170,7 @@ public class FirstTest {
     WebElement element = waitForElementPresent(by, error_message, timeInSeconds);
     element.clear();
     return element;
+
   }
+
 }
