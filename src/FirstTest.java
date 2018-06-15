@@ -263,6 +263,103 @@ public class FirstTest {
 
   }
 
+  @Test
+  public void addFirstArticleToMyList(){
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+            "Cannot find Search Wikipedia element",
+            5
+    );
+
+    waitForElementPresentAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            "Java",
+            "Cannot find Search... element",
+            5
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+            "Cannot find Search element",
+            30
+    );
+
+    waitForElementPresent(
+            By.id("org.wikipedia:id/view_page_title_text"),
+            "Cannot find Java article header",
+            30
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[@content-desc='More options']"),
+            "cannot find button",
+            5
+
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[@text='Add to reading list']"),
+            "cannot find button in context menu",
+            5
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[@resource-id='org.wikipedia:id/onboarding_button'][@text='Got it']"),
+                    "Cannot find 'Got it' button",
+                    5
+    );
+
+    waitForElementAndClear(
+            By.id("org.wikipedia:id/text_input"),
+            "Cannot find field to clear",
+            5
+    );
+
+    waitForElementPresentAndSendKeys(
+            By.id("org.wikipedia:id/text_input"),
+            "Programming languages",
+            "Was not able to name List",
+            5
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//*[@text='OK']"),
+            "cannot find Ok button in rename dialog",
+            5
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+            "Cannot find Close button",
+            5
+    );
+
+    waitForElementPresentAndClick(
+            By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
+            "Cannot find My lists button",
+            5
+    );
+
+   waitForElementPresentAndClick(
+           By.xpath("//*[@resource-id='org.wikipedia:id/item_title'][@text='Programming languages']"),
+           "Cannot find article in the List",
+           5
+   );
+
+   swipeElementToTheLeft(
+           By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
+           "Cannot swipe Article to the Left"
+   );
+
+   waitForElementNotPresent(
+           By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
+           "Article still presented in the list",
+           10
+   );
+
+  }
+
   private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {
     WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
     wait.withMessage(error_message + "\n");
@@ -313,7 +410,11 @@ public class FirstTest {
     int start_y =  (int) (size.height * 0.8);
     int end_y = (int) (size.height * 0.2);
 
-    action.press(x, start_y).waitAction(timeOfSwipe).moveTo(x, end_y).release().perform();
+    action
+            .press(x, start_y)
+            .waitAction(timeOfSwipe)
+            .moveTo(x, end_y)
+            .release().perform();
   }
   protected void  swipeUpQuick() {
     swipeUp(200);
@@ -330,6 +431,28 @@ public class FirstTest {
       swipeUpQuick();
       ++already_swiped;
     }
+  }
+
+  protected void swipeElementToTheLeft(By by, String error_message){
+   WebElement element = waitForElementPresent(
+           by,
+           error_message,
+           10
+   );
+ int left_x = element.getLocation().getX();
+ int right_x = left_x + element.getSize().getWidth();
+ int upper_y =  element.getLocation().getY();
+ int lower_y = upper_y + element.getSize().getHeight();
+ int middle_y = (upper_y + lower_y) / 2;
+
+ TouchAction action = new TouchAction(driver);
+ action
+         .press(right_x,middle_y)
+         .waitAction(150)
+         .moveTo(left_x,middle_y)
+         .release()
+         .perform();
+
   }
 
 }
