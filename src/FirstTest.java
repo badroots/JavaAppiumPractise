@@ -264,7 +264,7 @@ public class FirstTest {
   }
 
   @Test
-  public void addFirstArticleToMyList(){
+  public void addFirstArticleToMyList() {
 
     waitForElementPresentAndClick(
             By.xpath("//*[contains(@text,'Search Wikipedia')]"),
@@ -306,8 +306,8 @@ public class FirstTest {
 
     waitForElementPresentAndClick(
             By.xpath("//*[@resource-id='org.wikipedia:id/onboarding_button'][@text='Got it']"),
-                    "Cannot find 'Got it' button",
-                    5
+            "Cannot find 'Got it' button",
+            5
     );
 
     waitForElementAndClear(
@@ -341,24 +341,209 @@ public class FirstTest {
             5
     );
 
-   waitForElementPresentAndClick(
-           By.xpath("//*[@resource-id='org.wikipedia:id/item_title'][@text='Programming languages']"),
-           "Cannot find article in the List",
-           5
-   );
+    waitForElementPresentAndClick(
+            By.xpath("//*[@resource-id='org.wikipedia:id/item_title'][@text='Programming languages']"),
+            "Cannot find article in the List",
+            5
+    );
 
-   swipeElementToTheLeft(
-           By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
-           "Cannot swipe Article to the Left"
-   );
+    swipeElementToTheLeft(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
+            "Cannot swipe Article to the Left"
+    );
 
-   waitForElementNotPresent(
-           By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
-           "Article still presented in the list",
-           10
-   );
-
+    waitForElementNotPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
+            "Article still presented in the list",
+            10
+    );
   }
+
+    @Test
+    public void addTwoArticlesToMyListAndDeleteFirst(){
+
+      //adding first article to reading list
+      waitForElementPresentAndClick(
+              By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+              "Cannot find Search Wikipedia element",
+              5
+      );
+
+      waitForElementPresentAndSendKeys(
+              By.xpath("//*[contains(@text,'Search…')]"),
+              "Java",
+              "Cannot find Search... element",
+              5
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+              "Cannot find Search element",
+              30
+      );
+
+      waitForElementPresent(
+              By.id("org.wikipedia:id/view_page_title_text"),
+              "Cannot find Java article header",
+              30
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@content-desc='More options']"),
+              "cannot find button",
+              5
+
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@text='Add to reading list']"),
+              "cannot find button in context menu 1",
+              5
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@resource-id='org.wikipedia:id/onboarding_button'][@text='Got it']"),
+              "Cannot find 'Got it' button",
+              5
+      );
+
+      waitForElementAndClear(
+              By.id("org.wikipedia:id/text_input"),
+              "Cannot find field to clear",
+              5
+      );
+
+      waitForElementPresentAndSendKeys(
+              By.id("org.wikipedia:id/text_input"),
+              "Programming languages",
+              "Was not able to name List",
+              5
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@text='OK']"),
+              "cannot find Ok button in rename dialog",
+              5
+      );
+
+
+      waitForElementPresentAndClick(
+              By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+              "Cannot find Close button",
+              5
+      );
+
+      //adding second article to reading list
+      waitForElementPresentAndClick(
+              By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+              "Cannot find Search Wikipedia element",
+              5
+      );
+
+      waitForElementPresentAndSendKeys(
+              By.xpath("//*[contains(@text,'Search…')]"),
+              "Appium",
+              "Cannot find Search... element",
+              5
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//android.widget.TextView[@text='Appium']"),
+              "Cannot find Appium article element",
+              30
+      );
+
+      waitForElementPresent(
+              By.id("org.wikipedia:id/view_page_title_text"),
+              "Cannot find Appium article header",
+              30
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@content-desc='More options']"),
+              "cannot find button",
+              5
+
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@text='Add to reading list']"),
+              "cannot find button in context menu",
+              5
+      );
+
+
+      waitForElementPresentAndClick(
+              By.xpath("//android.widget.TextView[@text='Programming languages']"),
+              "Cannot find button Programming languages",
+              5
+      );
+
+
+      waitForElementPresentAndClick(
+              By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+              "Cannot find Close button",
+              5
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
+              "Cannot find My lists button",
+              5
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@resource-id='org.wikipedia:id/item_title'][@text='Programming languages']"),
+              "Cannot find Programming languages list",
+              10
+      );
+
+      //delete Java article from List
+      swipeElementToTheLeft(
+              By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Java (programming language)']"),
+              "Cannot swipe Article to the Left"
+      );
+
+      //Check that Appium article still there
+      WebElement title_element = waitForElementPresent(
+              By.id("org.wikipedia:id/page_list_item_title"),
+              "Cannot find article header",
+              15
+      );
+
+      String article_title = title_element.getAttribute("text");
+
+      Assert.assertEquals(
+              "Expected Article does not match actual",
+              "Appium",
+              article_title
+      );
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='Appium']"),
+              "Cannot find Appium article after deleting first article",
+              10
+
+      );
+
+      //Check that Appium article still there
+      WebElement inner_title_element = waitForElementPresent(
+              By.id("org.wikipedia:id/view_page_title_text"),
+              "Cannot find article header",
+              15
+      );
+
+      String inner_article_title = inner_title_element.getAttribute("text");
+
+      Assert.assertEquals(
+              "Expected Article does not match actual",
+              "Appium",
+              inner_article_title
+      );
+
+    }
+
+
 
   private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {
     WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);

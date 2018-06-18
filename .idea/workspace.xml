@@ -17,13 +17,13 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="356" column="47" selection-start-line="356" selection-start-column="47" selection-end-line="356" selection-end-column="47" />
+            <state relative-caret-position="139">
+              <caret line="496" column="53" selection-start-line="496" selection-start-column="53" selection-end-line="496" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9087#9088#0" expanded="true" />
-                <element signature="e#9109#9110#0" expanded="true" />
-                <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+                <element signature="e#14998#14999#0" expanded="true" />
+                <element signature="e#15020#15021#0" expanded="true" />
+                <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -159,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.addFirstArticleToMyList">
+  <component name="RunManager" selected="JUnit.FirstTest.addTwoArticlesToMyListAndDeleteFirst">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -180,13 +180,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.compareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.addTwoArticlesToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="compareArticleTitle" />
+      <option name="METHOD_NAME" value="addTwoArticlesToMyList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -197,13 +197,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.searchForArticlesAndCancelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="searchForArticlesAndCancelTest" />
+      <option name="METHOD_NAME" value="addTwoArticlesToMyListAndDeleteFirst" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -287,19 +287,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FirstTest.compareArticleTitle" />
-      <item itemvalue="JUnit.FirstTest.searchForArticlesAndCancelTest" />
       <item itemvalue="JUnit.FirstTest.searchForTextInResultTest" />
       <item itemvalue="JUnit.FirstTest.swipeArticle" />
       <item itemvalue="JUnit.FirstTest.addFirstArticleToMyList" />
+      <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyList" />
+      <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyListAndDeleteFirst" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyListAndDeleteFirst" />
+        <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyList" />
         <item itemvalue="JUnit.FirstTest.addFirstArticleToMyList" />
         <item itemvalue="JUnit.FirstTest.swipeArticle" />
         <item itemvalue="JUnit.FirstTest.searchForTextInResultTest" />
-        <item itemvalue="JUnit.FirstTest.searchForArticlesAndCancelTest" />
-        <item itemvalue="JUnit.FirstTest.compareArticleTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -317,39 +317,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 19h 47m 54s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 10m 26s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 19h 48m 44s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 13m 23s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 19h 50m 56s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 15m 27s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 19h 53m 01s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 17m 04s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 20h 11m 01s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 18m 10s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 20h 12m 04s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 18m 26s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 20h 13m 00s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 18m 37s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 20h 14m 51s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 20m 47s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 20h 20m 55s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.18 at 21h 39m 14s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_addFirstArticleToMyList - 2018.06.15 at 20h 24m 39s.xml">
-      <configuration name="FirstTest.addFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.18 at 21h 41m 06s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -358,9 +358,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.16094421" side_tool="true" visible="true" weight="0.46613547" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.16094421" side_tool="true" visible="true" weight="0.43293494" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8390558" visible="true" weight="0.46613547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8390558" visible="true" weight="0.43293494" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -429,9 +429,9 @@
           <caret line="239" column="38" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -449,9 +449,9 @@
           <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -469,9 +469,9 @@
           <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -489,9 +489,9 @@
           <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -502,9 +502,9 @@
           <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -515,9 +515,9 @@
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -528,9 +528,9 @@
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -541,9 +541,9 @@
           <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -564,13 +564,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="356" column="47" selection-start-line="356" selection-start-column="47" selection-end-line="356" selection-end-column="47" />
+        <state relative-caret-position="139">
+          <caret line="496" column="53" selection-start-line="496" selection-start-column="53" selection-end-line="496" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9087#9088#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <marker date="1529083364000" expanded="true" signature="9931:10224" ph="..." />
+            <element signature="e#14998#14999#0" expanded="true" />
+            <element signature="e#15020#15021#0" expanded="true" />
+            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
           </folding>
         </state>
       </provider>
