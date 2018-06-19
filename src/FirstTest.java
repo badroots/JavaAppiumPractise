@@ -543,6 +543,43 @@ public class FirstTest {
 
     }
 
+    @Test
+    public void testAmountOfNotEmptySearch(){
+
+      waitForElementPresentAndClick(
+              By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+              "Cannot find Search Wikipedia element",
+              5
+      );
+
+      String search_line = "Linkin Park discography";
+
+      waitForElementPresentAndSendKeys(
+              By.xpath("//*[contains(@text,'Search')]"),
+              search_line,
+              "Cannot send keys to earch line",
+              10
+      );
+
+      String search_result_locator = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
+
+      waitForElementPresent(
+              By.xpath(search_result_locator),
+              "No elements found in result",
+              10
+      );
+
+      int numberOfElementFound = findElementsAndReturnNumber(
+              By.xpath(search_result_locator)
+      );
+
+      Assert.assertTrue(
+              "Too few elements found",
+              numberOfElementFound > 0
+      );
+
+    }
+
 
 
   private WebElement waitForElementPresent(By by, String error_message, long timeInSeconds) {

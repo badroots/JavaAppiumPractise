@@ -17,13 +17,13 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="496" column="53" selection-start-line="496" selection-start-column="53" selection-end-line="496" selection-end-column="53" />
+            <state relative-caret-position="555">
+              <caret line="573" column="8" lean-forward="true" selection-start-line="573" selection-start-column="8" selection-end-line="573" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#14998#14999#0" expanded="true" />
                 <element signature="e#15020#15021#0" expanded="true" />
-                <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+                <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
               </folding>
             </state>
           </provider>
@@ -159,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.addTwoArticlesToMyListAndDeleteFirst">
+  <component name="RunManager" selected="JUnit.FirstTest.testAmountOfNotEmptySearch">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -214,13 +214,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.searchForTextInResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.swipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="searchForTextInResultTest" />
+      <option name="METHOD_NAME" value="swipeArticle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -231,13 +231,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.swipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="swipeArticle" />
+      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -287,19 +287,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FirstTest.searchForTextInResultTest" />
       <item itemvalue="JUnit.FirstTest.swipeArticle" />
       <item itemvalue="JUnit.FirstTest.addFirstArticleToMyList" />
       <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyList" />
       <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyListAndDeleteFirst" />
+      <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
         <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyListAndDeleteFirst" />
         <item itemvalue="JUnit.FirstTest.addTwoArticlesToMyList" />
         <item itemvalue="JUnit.FirstTest.addFirstArticleToMyList" />
         <item itemvalue="JUnit.FirstTest.swipeArticle" />
-        <item itemvalue="JUnit.FirstTest.searchForTextInResultTest" />
       </list>
     </recent_temporary>
   </component>
@@ -317,12 +317,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 10m 26s.xml">
-      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 13m 23s.xml">
-      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.15 at 21h 15m 27s.xml">
       <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
@@ -347,10 +341,15 @@
     <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.18 at 21h 41m 06s.xml">
       <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest_addTwoArticlesToMyListAndDeleteFirst - 2018.06.18 at 21h 47m 16s.xml">
+      <configuration name="FirstTest.addTwoArticlesToMyListAndDeleteFirst" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2018.06.19 at 23h 40m 24s.xml">
+      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -358,9 +357,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.16094421" side_tool="true" visible="true" weight="0.43293494" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.16094421" side_tool="true" visible="true" weight="0.57636124" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8390558" visible="true" weight="0.43293494" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8390558" visible="true" weight="0.57636124" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -431,7 +430,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -451,7 +450,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -471,7 +470,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -491,7 +490,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -504,7 +503,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -517,7 +516,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -530,7 +529,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -543,7 +542,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
@@ -564,13 +563,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="496" column="53" selection-start-line="496" selection-start-column="53" selection-end-line="496" selection-end-column="53" />
+        <state relative-caret-position="555">
+          <caret line="573" column="8" lean-forward="true" selection-start-line="573" selection-start-column="8" selection-end-line="573" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#14998#14999#0" expanded="true" />
             <element signature="e#15020#15021#0" expanded="true" />
-            <marker date="1529347522000" expanded="true" signature="15420:15713" ph="..." />
+            <marker date="1529440800000" expanded="true" signature="16460:16753" ph="..." />
           </folding>
         </state>
       </provider>
